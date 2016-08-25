@@ -1,0 +1,13 @@
+{% macro info( img_id='', class='', caption='This is a caption', modal='', onclick='small') -%}
+
+  <img data-open="{{ modal }}" class="cls-item {{ class }}" src="http://ww2.hdnux.com/photos/50/73/24/{{ img_id }}/3/1200x1200.jpg">
+
+  <div class="{{onclick}} reveal" id="{{modal}}" data-reveal>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <img src="http://ww2.hdnux.com/photos/50/73/24/{{ img_id }}/3/1200x1200.jpg">
+  <p class="caption">{{caption}}</p>
+</div>
+
+{%- endmacro %}

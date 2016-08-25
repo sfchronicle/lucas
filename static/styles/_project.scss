@@ -1,0 +1,103 @@
+.main-bg {
+	background-image: url('http://ww4.hdnux.com/photos/50/73/23/10728683/3/1200x1200.jpg');
+}
+
+.block {
+	padding-top:1em;
+	text-align:center;
+
+	h2{
+	font-family: $sans-serif-light;
+	margin-bottom:0;
+	}
+
+	p {
+	max-width:600px;
+  font-size: 0.89em;
+	}
+
+	hr{
+	margin-top:0.5em;
+	}
+}
+
+.grid,
+.gridtwo,
+.gridthree,
+.gridfour,
+.gridfive{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+
+.grid-sizer,
+.cls-item,
+.amr-sizer,
+.gr-sizer,
+.gn-sizer,
+.sd-sizer,  { 
+  width: 32.6%; 
+  margin-bottom:10px;
+
+  @media (max-width:863px){
+    width:32.5%;
+  } 
+  @media (max-width:760px){
+    width:32%;
+  } 
+  @media (max-width:480px){
+    width:48%;
+  } 
+}
+.grid-item--width2 { 
+  width: 30%; 
+}
+.grid-item--width3 { 
+  width: 40%; 
+}
+
+.reveal{ 
+  outline:none;
+  img{
+    width:100%;
+  }
+  
+  button {
+    background: rgba(178, 178, 178, 0.3);
+    padding: 10px 20px 10px 20px;
+    border: none;
+    margin-bottom: 8px;
+    float: right;
+  }
+
+}
+
+@media screen and (min-width: 40em){
+  .reveal.small {
+      width: 35%;
+      max-width: 75rem;
+  }
+  .reveal.large {
+      width: 60%;
+      max-width: 75rem;
+  }
+}
+
+
+@media screen and (max-width: 39.9375em){
+  .reveal {
+      top: 0;
+      left: 0;
+      width: 80%;
+      height:inherit;
+      min-height:inherit;
+      margin:auto;
+      border: 0;
+      border-radius: 0;
+  }
+
+  .reveal.large{
+  width:92%;
+  }
+}

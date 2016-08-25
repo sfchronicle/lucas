@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block head %}
+{% include 'components/_social.html' %}
+{% endblock %}
+
+{% block hearst_title %}{% endblock %}
+{% block hearst_class %}{% endblock %}
+{% block author %}{% endblock %}
+
+{% block content %}
+
+{% include 'components/_header.html' %}
+
+<main class="container">
+
+	<div class="title-container">
+		<div class="background-img main-bg">
+		    <div class="dim"></div>
+			<div class="over-img">
+				<h1 class="title long">Exclusive look:<br>Lucas Museum of Narrative Art</h1>
+				<p class="author">By <a href="mailto:cdesmarais@sfchronicle.com">Charles Desmarais</a></p>
+				<p class="date">July 22, 2016</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- CLASSICS -->
+	{% include 'blocks/classics.html' %}
+
+	<!-- American Life -->
+	{% include 'blocks/american-life.html' %}
+
+	<!-- Great Themes  -->
+	{% include 'blocks/great-themes.html' %}
+
+	<!-- Graphic  -->
+	{% include 'blocks/graphic.html' %}
+
+	<!-- Stories Draft  -->
+	{% include 'blocks/stories.html' %}
+
+</main>
+
+{% endblock %}
+
+{% block javascript %}
+<script>
+
+	$(document).ready(function() {
+	  App.init();
+	});
+
+	$(document).foundation();
+
+
+	// init Masonry
+	var $grid = $('.grid').masonry({
+	  // options...
+	  itemSelector: '.cls-item',
+	  gutter: 10,
+	  columnWidth: '.grid-sizer',
+	  percentPosition: true,
+	  transitionDuration: 0
+	});
+	// layout Masonry after each image loads
+	$grid.imagesLoaded().progress( function() {
+	  $grid.masonry('layout');
+	});
+
+	// init Masonry
+	var $gridtwo = $('.gridtwo').masonry({
+	  // options...
+	  itemSelector: '.cls-item',
+	  gutter: 10,
+	  columnWidth: '.amr-sizer',
+	  percentPosition: true,
+	  transitionDuration: 0
+	});
+	// layout Masonry after each image loads
+	$gridtwo.imagesLoaded().progress( function() {
+	  $gridtwo.masonry('layout');
+	});
+
+	// init Masonry
+	var $gridthree = $('.gridthree').masonry({
+	  // options...
+	  itemSelector: '.cls-item',
+	  gutter: 10,
+	  columnWidth: '.gr-sizer',
+	  percentPosition: true,
+	  transitionDuration: 0
+	});
+	// layout Masonry after each image loads
+	$gridthree.imagesLoaded().progress( function() {
+	  $gridthree.masonry('layout');
+	});
+
+	// init Masonry
+	var $gridfour = $('.gridfour').masonry({
+	  // options...
+	  itemSelector: '.cls-item',
+	  gutter: 10,
+	  columnWidth: '.gn-sizer',
+	  percentPosition: true,
+	  transitionDuration: 0
+	});
+	// layout Masonry after each image loads
+	$gridfour.imagesLoaded().progress( function() {
+	  $gridfour.masonry('layout');
+	});
+
+	// init Masonry
+	var $gridfive = $('.gridfive').masonry({
+	  // options...
+	  itemSelector: '.cls-item',
+	  gutter: 10,
+	  columnWidth: '.sd-sizer',
+	  percentPosition: true,
+	  transitionDuration: 0
+	});
+	// layout Masonry after each image loads
+	$gridfive.imagesLoaded().progress( function() {
+	  $gridfive.masonry('layout');
+	});
+
+
+</script>
+{% endblock %}
