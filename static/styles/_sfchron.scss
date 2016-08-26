@@ -1,6 +1,6 @@
 // DEBUG STYLES
 .debug {
-  
+
 }
 // END DEBUG
 
@@ -111,7 +111,7 @@ p {
 
 .float-img {
     max-width: 420px;
-    
+
     &.vertical {
       max-width: 300px;
     }
@@ -198,7 +198,10 @@ header {
   margin: 0 0 0 10px;
   display: inline-block;
   float: left;
-  
+  @media #{$mobile} {
+    margin: 0;
+  }
+
   img {
     opacity: 1;
     height: 20px;
@@ -218,7 +221,7 @@ header {
     float: left;
     padding: 6px 0 0 8px;
     margin: 0;
-    
+
     img {
      vertical-align: text-bottom;
      width:180px;
@@ -231,7 +234,7 @@ header {
 
   .mobile-logo {
     display: none;
-    
+
     @media #{$mobile} {
       display: inline;
     }
@@ -277,13 +280,13 @@ header {
 .project-logo {
   max-width: 730px;
   margin: 0 auto;
-  
+
   img {
     width: 160px;
     padding-left: 15px;
     float:right;
     margin-top: -100px;
-    
+
     @media #{$mobile} {
       float: none;
       width: 150px;
@@ -296,13 +299,13 @@ header {
     float: left;
     margin: 0;
     margin-right: 10px;
-    
+
     img {
       width: 240px;
       margin-top: 0;
       margin-bottom: 5px;
     }
-    
+
     @media #{$mobile} {
       margin-right: 0;
     }
@@ -314,7 +317,7 @@ header {
   font-style: italic;
   font-size: 17px;
   padding-top: 20px;
-  
+
   a {
     text-decoration:none;
     color: $link;
@@ -366,7 +369,7 @@ footer {
     &.text-width {
       max-width:800px;
     }
-  
+
     @media #{$mobile} {
       font-size: 1.8em;
     }
@@ -390,21 +393,21 @@ footer {
   color: $dark-gray;
   font-style: italic;
   font-family: $sans-serif-light;
-  
+
   @media #{$tablet} {
     padding: 0px 10px;
     padding-top: 10px;
   }
-  
+
   @media #{$mobile} {
     padding: 0px 10px;
     padding-top: 10px;
   }
-  
+
   &.padded {
     padding-bottom: 40px;
   }
-  
+
   &.second {
     padding-top: 0px;
   }
@@ -416,7 +419,7 @@ footer {
   margin-top: 5px;
   padding: 0 10px;
   max-width: 100%;
-  
+
   &.landing {
     margin-bottom: 2.5em;
   }
@@ -432,7 +435,7 @@ footer {
   margin-bottom: 15px;
   margin-top: 35px;
   font-family: $serif-bold;
-  
+
   &.padded {
     padding-top: 10px;
   }
@@ -440,13 +443,13 @@ footer {
 
 #social {
   text-align: center;
-  
+
   a {
     font-size: 25px;
     padding: 8px;
     color: $link;
     cursor: pointer;
-    
+
     &:hover {
       color: $light-gray;
       cursor: pointer;
@@ -455,13 +458,13 @@ footer {
 }
 
 #social-inline {
-  
+
   .social {
     display: inline-block;
     padding: 0 10px;
     float: left;
   }
-  
+
   a {
     font-size: 20px;
     color: $share-gray;

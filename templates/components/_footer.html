@@ -1,3 +1,32 @@
+<div class="max">
+  <hr>
+  <div class="credits">
+    {% import 'components/_credits.html' as credit %}
+    <!-- Variables are name, email slug and twitter handle -->
+    <div class="group">
+      <p>Reporter</p>
+      {{ credit.info('Charles Desmarais', 'cdesmarais', 'Artguy1' ) }}
+    </div>
+    <div class="group">
+      <p>Interactive producers</p>
+      {{ credit.info('Lucio Villa', 'lvilla', 'luciovilla' ) }}
+      {{ credit.info('Kimberly Chua', 'kchua', 'KimberlyAChua' ) }}
+      {{ credit.info("Emma O'Neill", "eoneill", "emmaruthoneill" ) }}
+    </div>
+  </div>
+</div>
+
+{% import 'components/_relatedstories.html' as related %}
+<div class="max">
+  <hr>
+  <div class="dont-miss-related">
+    {{ related.story("Black lives, black voices", 'http://projects.sfchronicle.com/2016/black-voices/', '../static/photos/blacklives_social.jpg') }}
+    {{ related.story("Take a tour of SFMOMA", 'http://projects.sfchronicle.com/2016/sfmoma-tour-guide/', '../static/photos/moma_social.jpg') }}
+    {{ related.story("Chronicle covers", 'http://www.sfchronicle.com/covers/', '../static/photos/chroncovers_social.jpg') }}
+    {{ related.story("The rice issue", 'http://www.sfchronicle.com/rice/', '../static/photos/rice_social.jpg') }}
+  </div>
+</div>
+
 <footer>
   <a class="logo" href="http://www.sfchronicle.com" target="_blank">
     <img src="http://projects.sfchronicle.com/shared/logos/sfc_logo_white.png">
