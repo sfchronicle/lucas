@@ -2,6 +2,15 @@
 	background-image: url('http://ww4.hdnux.com/photos/50/73/23/10833184/3/1200x1200.jpg');
 }
 
+.title{
+  font-family:$sans-serif;
+
+  @media (max-width:630px){
+    font-size:1.8em;
+  }
+
+}
+
 .block {
 	padding-top:1em;
 	text-align:center;
@@ -128,3 +137,4 @@
     }
   }
 }
+

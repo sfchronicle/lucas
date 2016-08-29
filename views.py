@@ -5,13 +5,13 @@ from models import *
 
 
 # Project Title
-app.config['PROJ_TITLE'] = ''
+app.config['PROJ_TITLE'] = 'Art of Storytelling: An exclusive first look into the Lucas Museum of Narrative Art'
 
 # Site Path/Slug
-app.config['PATH'] = ''
+app.config['PATH'] = 'lucas-museum'
 
 # Project Category for Omniture 
-app.config['CATEGORY'] = ''
+app.config['CATEGORY'] = 'Arts & Entertainment'
 
 # Project Hashtag
 app.config['HASHTAG'] = ''
