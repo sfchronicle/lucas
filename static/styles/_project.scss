@@ -27,7 +27,8 @@
 .gridfour,
 .gridfive{
   max-width:1000px;
-  margin:0 auto;
+  margin:0 auto 2em;
+
 }
 
 
@@ -44,11 +45,9 @@
     width:32.5%;
   }
   @media (max-width:760px){
-    width:32%;
+    width:32.43%;
   }
-  @media (max-width:480px){
-    width:48%;
-  }
+
 }
 .grid-item--width2 {
   width: 30%;

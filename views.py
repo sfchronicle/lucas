@@ -42,6 +42,6 @@ twitter_text:
 def index():
     return render_template('index.html',
     	slug='',
-    	title="",
-    	description="",
-    	twitter_text="")
+    	title="Exclusive look: Lucas Museum of Narrative Art",
+    	description="The museum will showcase more than 55 original drawings and paintings, plus more than 700 photographic reproductions of works in George Lucas' art collection.",
+    	twitter_text="Art of Storytelling: An exclusive first look into the Lucas Museum of Narrative Art.")
