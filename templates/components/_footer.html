@@ -16,14 +16,41 @@
   </div>
 </div>
 
-{% import 'components/_relatedstories.html' as related %}
 <div class="max">
   <hr>
   <div class="dont-miss-related">
-    {{ related.story("Black lives, black voices", 'http://projects.sfchronicle.com/2016/black-voices/', '../static/photos/blacklives_social.jpg') }}
-    {{ related.story("Take a tour of SFMOMA", 'http://projects.sfchronicle.com/2016/sfmoma-tour-guide/', '../static/photos/moma_social.jpg') }}
-    {{ related.story("Chronicle covers", 'http://www.sfchronicle.com/covers/', '../static/photos/chroncovers_social.jpg') }}
-    {{ related.story("The rice issue", 'http://www.sfchronicle.com/rice/', '../static/photos/rice_social.jpg') }}
+    <div class="story ">
+    <div class="padded">
+      <a href="http://projects.sfchronicle.com/2016/black-voices/">
+        <img src="{{ url_for('static', filename='photos/blacklives_social.jpg') }}">
+      <h4>Black lives, black voices</h4>
+      </a>
+    </div>
+  </div>
+    <div class="story ">
+    <div class="padded">
+      <a href="http://projects.sfchronicle.com/2016/sfmoma-tour-guide/">
+        <img src="{{ url_for('static', filename='photos/moma_social.jpg') }}">
+      <h4>Take a tour of SFMOMA</h4>
+      </a>
+    </div>
+  </div>
+    <div class="story ">
+    <div class="padded">
+      <a href="http://www.sfchronicle.com/covers/">
+        <img src="{{ url_for('static', filename='photos/chroncovers_social.jpg') }}">
+      <h4>Chronicle covers</h4>
+      </a>
+    </div>
+  </div>
+    <div class="story ">
+    <div class="padded">
+      <a href="http://www.sfchronicle.com/rice/">
+        <img src="{{ url_for('static', filename='photos/rice_social.jpg') }}">
+      <h4>The rice issue</h4>
+      </a>
+    </div>
+  </div>
   </div>
 </div>
 

@@ -8,7 +8,7 @@ from models import *
 app.config['PROJ_TITLE'] = 'Art of Storytelling: An exclusive first look into the Lucas Museum of Narrative Art'
 
 # Site Path/Slug
-app.config['PATH'] = 'lucas-museum'
+app.config['PATH'] = 'lucas-art'
 
 # Project Category for Omniture 
 app.config['CATEGORY'] = 'Arts & Entertainment'
