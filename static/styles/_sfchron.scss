@@ -131,7 +131,7 @@ p {
 
     &.left {
       float: left;
-      margin: 1em 1.5em 0.5em -7.5em;
+      margin: 0 1.5em 0.5em -7.5em;
 
       @media (max-width: 1072px){
         float: none;
@@ -141,7 +141,7 @@ p {
 
     &.right {
       float: right;
-      margin: 1em -7.5em 0.5em 1.5em;
+      margin: 0 -7.5em 0.5em 1.5em;
 
       @media (max-width: 1072px){
         float: none;
