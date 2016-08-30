@@ -5,7 +5,7 @@ from models import *
 
 
 # Project Title
-app.config['PROJ_TITLE'] = 'Art of Storytelling: An exclusive first look into the Lucas Museum of Narrative Art'
+app.config['PROJ_TITLE'] = 'An exclusive first look at the collection of the Lucas Museum of Narrative Art'
 
 # Site Path/Slug
 app.config['PATH'] = 'lucas-art'
@@ -42,6 +42,6 @@ twitter_text:
 def index():
     return render_template('index.html',
     	slug='',
-    	title="Exclusive look: Lucas Museum of Narrative Art",
-    	description="The museum will showcase more than 55 original drawings and paintings, plus more than 700 photographic reproductions of works in George Lucas' art collection.",
+    	title="An exclusive first look at the collection of the Lucas Museum of Narrative Art",
+    	description="Charles Desmarais: It seems almost everyone has an opinion about filmmaker George Lucas' collection, but no journalist, critic or casual art fan has seen it - until now.",
     	twitter_text="Art of Storytelling: An exclusive first look into the Lucas Museum of Narrative Art.")
