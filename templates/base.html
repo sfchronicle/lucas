@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="http://www.sfchronicle.com/favicon.ico?v=3">
     {% block head %}{% endblock %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}?v2">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Begin Hearst analytics -->
     <script type="text/javascript">
         var omni_channelPath = "{{config.CATEGORY|safe}} :: Special Projects :: Lucas Museum of Narrative Art";
-        var omni_title = "{{title|safe}}";
+        var omni_title = "Lucas Museum of Narrative Art: Exclusive first look at the collection";
         var omni_className = "{% block hearst_class %}channel{% endblock %}";
         var omni_publicationDate = "2016-08-29 00:00:00";
         var omni_authorName = "{% block author %}Lucio Villa, Emma O'Neill{% endblock %}";
